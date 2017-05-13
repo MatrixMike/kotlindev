@@ -23,11 +23,13 @@ fun main(args: Array<String>) {
     .sortedBy { it }
     .map { it.toUpperCase() }
     .forEach { println(it) }
+    println(fruits)
     
     val items = setOf("apple", "banana", "kiwi")
     when {
         "orange" in items -> println("juicy")
         "apple" in items -> println("apple is fine too")
     }
+    println(items)
     calendarDemo()
 }
