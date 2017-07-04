@@ -5,6 +5,7 @@ fun calendarDemo() {
     if (calendar.firstDayOfWeek == Calendar.SUNDAY) {  // call getFirstDayOfWeek()
         calendar.firstDayOfWeek = Calendar.MONDAY       // call setFirstDayOfWeek()
     }
+    print("Cal DOW" )
     println(calendar.firstDayOfWeek)
 }
 
@@ -30,4 +31,5 @@ fun main(args: Array<String>) {
         "apple" in items -> println("apple is fine too")
     }
     calendarDemo()
+//   printf("%n")
 }

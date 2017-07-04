@@ -51,5 +51,7 @@ fun main(args: Array<String>) {
 //	array[x] = array[x] * 2 // no actual calls to get() and set() generated
 	for (x in array) { // no iterator created
     print(x)
-}
+
+	}
+    print("\n")
 }
