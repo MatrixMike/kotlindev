@@ -17,7 +17,7 @@ fun main(args: Array<String>) {
     println("Hello, $scope!")
     println("Hello, World!")
 //    println(args.len)
-    
+    val gears = listOf(9,3,10,1,5)
     val fruits = listOf("banana", "avocado", "apple", "kiwi", "blackberry")
     fruits
     .filter { it.startsWith("a") }
@@ -31,5 +31,9 @@ fun main(args: Array<String>) {
         "apple" in items -> println("apple is fine too")
     }
     calendarDemo()
+    println(gears)
+    gears
+    .sortedBy{it}
+    .forEach { println(it) }
 //   printf("%n")
 }
