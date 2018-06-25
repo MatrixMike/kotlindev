@@ -12,4 +12,8 @@ enum class Color(
 
 fun main(args: Array<String>) {
     println(Color.VIOLET.rgb())
+    println(Color.RED.rgb())
+    val pi = 3.14159265358979323
+    val formatted = String.format("%.2f", pi) ;
+    println(formatted)
 }
