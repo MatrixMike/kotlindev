@@ -65,10 +65,16 @@ fun main(args: Array<String>) {
     val bbs = BasicBitmapStorage(width, height)
     with (bbs) {
         fill(Color.cyan)
-        val p1 = Point(10, 100)
-        val p2 = Point(250, 270)
-        val p3 = Point(150, 20)
-        val p4 = Point(120, 50)
+        // b0 = [(0,0),(0,100),(250,200),(200,0)]    from Haskell
+       
+//        val p1 = Point(10, 100)
+//        val p2 = Point(250, 270)
+//        val p3 = Point(150, 20)
+//        val p4 = Point(120, 50)
+
+        val p1 = Point(0,0)
+        val p2 = Point(0,200)
+        val p4 = Point(250,200)
 //        quadraticBezier(p1, p2, p3, Color.black, 20)
         quadraticBezier(p1, p2, p4, Color.black, 20)
         val qbFile = File("quadratic_bezier.jpg")
