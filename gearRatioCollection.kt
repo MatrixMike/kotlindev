@@ -24,6 +24,7 @@ fun main(args: Array<String>) {
     println("Hello, world!")
     frontGears
     .sortedBy{it}
+//    .max()
     .forEach { println(it/2.0) }
     println("==")
     for (f in frontGears){

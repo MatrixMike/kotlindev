@@ -1,0 +1,19 @@
+internal class JavaCode {
+  fun toJSON():`fun`
+  init{
+    val sb = StringBuilder()
+    sb.append("[")
+    val iterator = collection.iterator()
+    while (iterator.hasNext())
+    {
+      val element = iterator.next()
+      sb.append(element)
+      if (iterator.hasNext())
+      {
+        sb.append(", ")
+      }
+    }
+    sb.append("]")
+    return sb.toString()
+  }
+}
