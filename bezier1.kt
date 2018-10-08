@@ -1,5 +1,6 @@
 // Version 1.2.40
- 
+// 06.10.2018 22:13:04
+
 import java.awt.Color
 import java.awt.Graphics
 import java.awt.image.BufferedImage
@@ -60,11 +61,11 @@ class BasicBitmapStorage(width: Int, height: Int) {
 }
  
 fun main(args: Array<String>) {
-    val width = 320
+    val width  = 320
     val height = 320
     val bbs = BasicBitmapStorage(width, height)
     with (bbs) {
-        fill(Color.cyan)
+        fill(Color.green)
         // b0 = [(0,0),(0,100),(250,200),(200,0)]    from Haskell
        
 //        val p1 = Point(10, 100)
@@ -72,11 +73,23 @@ fun main(args: Array<String>) {
 //        val p3 = Point(150, 20)
 //        val p4 = Point(120, 50)
 
-        val p1 = Point(0,0)
-        val p2 = Point(0,200)
-        val p4 = Point(250,200)
+        val p1 = Point(150,0)
+        val p2 = Point(100,200)
+        val p4 = Point(300,200)
+        val p5 = Point(300,150)
+        val p6 = Point(300,100)
+        val p7 = Point(300,250)
+        val p8 = Point(300,300)
+        val p9 = Point(0,300)
+        val p10 = Point(319,319)  // max values that work so far 
 //        quadraticBezier(p1, p2, p3, Color.black, 20)
         quadraticBezier(p1, p2, p4, Color.black, 20)
+        quadraticBezier(p1, p2, p5, Color.red, 20)
+        quadraticBezier(p1, p2, p6, Color.blue, 20)
+        quadraticBezier(p1, p2, p7, Color.blue, 20)  
+        quadraticBezier(p1, p2, p8, Color.blue, 20)   
+        quadraticBezier(p1, p2, p9, Color.blue, 20)  
+        quadraticBezier(p1, p2, p10, Color.blue, 20)           
         val qbFile = File("quadratic_bezier.jpg")
         ImageIO.write(image, "jpg", qbFile)
     }

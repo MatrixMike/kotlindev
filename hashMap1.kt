@@ -6,4 +6,5 @@ fun main(args: Array<String>) {
     println(map) // {-1=zz, 1=x, 2=y}
     map.put(6,"six")
     println(map.size)     // isEmpty()
+    println(map)
 }
