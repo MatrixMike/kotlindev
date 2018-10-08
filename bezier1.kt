@@ -89,7 +89,8 @@ fun main(args: Array<String>) {
         quadraticBezier(p1, p2, p7, Color.blue, 20)  
         quadraticBezier(p1, p2, p8, Color.blue, 20)   
         quadraticBezier(p1, p2, p9, Color.blue, 20)  
-        quadraticBezier(p1, p2, p10, Color.blue, 20)           
+        quadraticBezier(p1, p2, p10, Color.blue, 20)    
+        drawLine(10, 10, 310, 310, Color.blue)       
         val qbFile = File("quadratic_bezier.jpg")
         ImageIO.write(image, "jpg", qbFile)
     }
