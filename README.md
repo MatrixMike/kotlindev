@@ -10,4 +10,5 @@ kotlinc hello.kt -include-runtime -d hello.jar
 
 java -jar hello.jar  3 4 5
 
+~/kotlinc/bin/kotlinc %e.kt -include-runtime -d %e.jar
 
