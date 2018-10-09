@@ -17,6 +17,10 @@ class BasicBitmapStorage(width: Int, height: Int) {
         val g = image.graphics
         g.color = c
         g.fillRect(0, 0, image.width, image.height)
+        val fontSize = 20
+ //       g.setFont("TimesRoman")    //      PLAIN, fontSize))
+        g.setColor(Color.red)
+        g.drawString("www.electroteach.com", 10, 80)
     }
  
     fun setPixel(x: Int, y: Int, c: Color) = image.setRGB(x, y, c.getRGB())
@@ -75,12 +79,12 @@ fun main(args: Array<String>) {
 
         val p1 = Point(150,0)
         val p2 = Point(100,200)
-        val p4 = Point(300,200)
-        val p5 = Point(300,150)
-        val p6 = Point(300,100)
-        val p7 = Point(300,250)
-        val p8 = Point(300,300)
-        val p9 = Point(0,300)
+        val p4 = Point(width-1,200)
+        val p5 = Point(width-1,150)
+        val p6 = Point(width-1,100)
+        val p7 = Point(width-1,250)
+        val p8 = Point(width-1,height-1)  // wanted to use width-1
+        val p9 = Point(0,height-1)
         val p10 = Point(319,319)  // max values that work so far 
 //        quadraticBezier(p1, p2, p3, Color.black, 20)
         quadraticBezier(p1, p2, p4, Color.black, 20)
