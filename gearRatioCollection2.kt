@@ -20,11 +20,12 @@ fun main(args: Array<String>) {
     val numbers: MutableList<Double> = mutableListOf()
     for (f in frontGears){
         for (r in rearGears)
+
         numbers.add(f/r)  // create a list of the values needed to be processed
     }
 //    println(numbers)  // prints the whole collection
 //    numbers.sortedBy{it}.forEach{println(it)}  // prints unformatted
-//    val formatted = String.format("%.2f   %.2f %.2f", f/r, f, r ) ;
+ //           val formatted = String.format("%.2f   %.2f %.2f", f/r, f, r ) ;
 //        println(formatted) 
     numbers
     .sortedBy{it}  // so we want a sorted list and then we want it to be printed with a specific format
