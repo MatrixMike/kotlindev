@@ -15,7 +15,8 @@ fun main(args: Array<String>) {
     println("Hello, world! 1")
     frontGears
     .sortedBy{it}
-    .forEach { println(it/2.0) }
+    .forEach { println(it/1.0) }
+    println(frontGears)
 
     val numbers: MutableList<Double> = mutableListOf()
     for (f in frontGears){

@@ -1,10 +1,11 @@
 import java.util.Calendar
 import java.util.*
 
-fun calendarDemo() {
+fun calendarDemo() {  // some weird code 
     val calendar = Calendar.getInstance()
     if (calendar.firstDayOfWeek == Calendar.SUNDAY) {  // call getFirstDayOfWeek()
         calendar.firstDayOfWeek == Calendar.MONDAY       // call setFirstDayOfWeek()
+        calendar.firstDayOfWeek == Calendar.THURSDAY      // call setFirstDayOfWeek()
     }
     println(calendar.firstDayOfWeek)
 }
@@ -27,7 +28,7 @@ fun main(args: Array<String>) {
 	println(args[1])
 	val scope = "world"
     println("Hello, $scope!")
-    println("Hello, World!")
+    println("Hello, World! 1")
 //    println(args.len)
     
     val fruits = listOf("banana", "avocado", "apple", "kiwi", "blackberry")
@@ -45,7 +46,9 @@ fun main(args: Array<String>) {
         "apple" in items -> println("apple is fine too")
     }
     println("Number of "+ items)
+    println("Hello, World! 2")
     calendarDemo()
+    println("Hello, World! 3")
     
     val array = arrayOf(1, 2, 3, 4)
 //	array[x] = array[x] * 2 // no actual calls to get() and set() generated
