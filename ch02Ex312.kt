@@ -1,4 +1,6 @@
 package ch02.ex3_1_2_DeclaringEnumClasses1
+import java.time.LocalDateTime
+
 
 enum class Color(
         val r: Int, val g: Int, val b: Int
@@ -16,6 +18,7 @@ fun main(args: Array<String>) {
     val  month = 12;
     val  millisecondsInDay = 24*60*60*1000;
     val  date = ((month - 1L)*30 + 15)*millisecondsInDay;
+    val current = LocalDateTime.now()
 
     println(Color.VIOLET.rgb())  // prints as decimal - maybe better as HEX
     println(Color.RED.rgb())
@@ -30,4 +33,7 @@ fun main(args: Array<String>) {
     println(String.format("%tB",7L))
     println(String.format("%tB",1L))
     println(String.format("%tB", date))
+//    println(String.format("%tB", Date.now()))
+    println("Current Date and Time is: $current")
+    println(String.format("%tB", current)    )
 }
