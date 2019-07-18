@@ -21,5 +21,7 @@ fun main(args: Array<String>) {
     println(mix(Color.BLUE, Color.YELLOW))
     println(mix(Color.YELLOW, Color.BLUE))
     println(mix(Color.RED,  Color.YELLOW))
+    println(String.format("0x%08X", 1))
+    //    println(String.format("0x%08X", mix(Color.RED,  Color.YELLOW)))
 //    println(mix(Color.BLUE, Color.BLUE))   // uncomment this for Exception
 }

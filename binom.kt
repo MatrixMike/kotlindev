@@ -1,5 +1,5 @@
 import org.sample.factorial
-import org.sample.forOdd
+//import org.sample.forOdd
     
 fun binom(m: Int, n: Int): Long =
     if (m < n) factorial(n) / factorial(m) / factorial(n-m) else 1
