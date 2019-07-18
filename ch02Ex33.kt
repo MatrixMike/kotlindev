@@ -5,7 +5,7 @@ package ch02.ex3_3_UsingWhenWithArbitraryObjects
 
 // combining enum in a function
 // printing the word in the enum list
-
+// https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/set-of.html
 enum class Color {
     RED, ORANGE, YELLOW, GREEN_1, BLUE, INDIGO, VIOLET
 }
