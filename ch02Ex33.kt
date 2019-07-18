@@ -18,6 +18,8 @@ fun mix(c1: Color, c2: Color) =
         }
 
 fun main(args: Array<String>) {
+    println(String.format("%d   0x%08X", 192,192))   // class C in TCPIP
+    println(String.format("%d   0x%08X", 168,168))
     println(mix(Color.BLUE, Color.YELLOW))
     println(mix(Color.YELLOW, Color.BLUE))
     println(mix(Color.RED,  Color.YELLOW))
