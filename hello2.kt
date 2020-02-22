@@ -2,7 +2,7 @@ import java.util.Calendar
 
 fun calendarDemo() {
     val calendar = Calendar.getInstance()
-    if (calendar.firstDayOfWeek == Calendar.SUNDAY) {  // call getFirstDayOfWeek()
+    if (calendar.firstDayOfWeek == Calendar.FRIDAY) {  // call getFirstDayOfWeek()
         calendar.firstDayOfWeek = Calendar.MONDAY       // call setFirstDayOfWeek()
     }
     print("Cal DOW" )
