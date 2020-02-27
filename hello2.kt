@@ -36,4 +36,9 @@ fun main(args: Array<String>) {
     .sortedBy{it}
     .forEach { println(it) }
 //   printf("%n")
+ for (ch in 'a' .. 'z' // step 2){
+ {
+ print(ch)
+ }
+
 }

@@ -4,27 +4,22 @@
 import java.util.*
 
 
-fun Mammal.knownSpeciesCount(): Int {
-    return when (this) {
-        is Sloth -> 6
-        is Panda -> 2
-        is Manatee -> 3
-    }
-}
 
-fun mammalFactCheck(mammal: Mammal, factCheck: KFunction1<Mammal, Int>): Int {
-    return factCheck(mammal)
-}
+val floatValue: Float = Resources.dpToPx(64)
 
-fun main() {
+val floatValue: Int   = Resources.dpToPx(64)
 
-    val crewCrewCrew = listOf(
-        Sloth("Jerry", false, 15),
-        Panda("Tegan"),
-        Manatee("Manny")
-    )
-
-    crewCrewCrew.forEach {
-        println("${it.name} - mammalFactCheck(it, Mammal::knownSpeciesCount")
-    }
-}
+inline fun <reified T>
+ Resources.dpToPx(value: Int): T {
+ val result = TypedValue.applyDimension(
+ TypedValue.COMPLEX_UNIT_DIP,
+ value.toFloat(),
+ displayMetrics)
+ 
+ return when (T::class) {
+ Float::class -> result as T
+ Int::class -> result.toInt() as T 
+ else -> throw illegalAccessException("")
+ }
+ }
+ 
