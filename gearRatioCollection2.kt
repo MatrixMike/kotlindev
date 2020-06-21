@@ -26,9 +26,11 @@ fun main(args: Array<String>) {
         println("Hello, world! 2")
     println(numbers)  // prints the whole collection
     println("Hello, world! 3")
-//    numbers.sortedBy{it}.forEach{println(it)}  // prints unformatted
- //           val formatted = String.format("%.2f   %.2f %.2f", f/r, f, r ) ;
-//        println(formatted) 
+    numbers.sortedBy{it}.forEach{println(it)}  // prints unformatted
+    //val formatted = String.format("%.2f   %.2f %.2f", frontGears/rearGears, frontGears, rearGears ) ;
+    // val formatted = String.format("%.2f  %.2f", 1.2, 1/2)
+    val formatted = String.format(" test text %.2f  ", 1.2)
+        println(formatted) 
     numbers
     .sortedBy{it}  // so we want a sorted list and then we want it to be printed with a specific format
     .forEach{ println("%6.3f  ".format(it))}
