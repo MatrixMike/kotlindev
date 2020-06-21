@@ -35,10 +35,12 @@ fun main(args: Array<String>) {
     gears
     .sortedBy{it}
     .forEach { println(it) }
+    }
 //   printf("%n")
- for (ch in 'a' .. 'z' // step 2){
+/* for (ch in 'a' .. 'z' // step 2){
  {
  print(ch)
  }
 
 }
+*/
