@@ -27,9 +27,10 @@ fun main(args: Array<String>) {
 //    .max()
     .forEach { println(it/2.0) }
     println("==*")
+    var formatted =" "
     for (f in frontGears){
     for (r in rearGears){
-        val formatted = String.format("%.2f   %.2f %.2f", f/r, f, r ) ;
+         formatted = formatted + String.format("*%.2f   %.2f   %.2f   ", f/r, f, r ) ;
         println(formatted) 
 		}
 	println("next f")
