@@ -3,6 +3,7 @@ package org.electroteach
  * We declare a package-level function main which returns Unit and takes
  * an Array of strings as a parameter. Note that semicolons are optional.
  */
+//import org.electroteach
 /*
 26.06.2018 12:21:10
 my aim is to display (create) a sorted list of the bike gear ratios produced by
@@ -29,7 +30,7 @@ fun main(args: Array<String>) {
     .forEach { println(it/2.0) }
     println("==*")
 //    var formatted ="%"
-   gearsOut()
+   println(gearsOut())
         println("==*")
     val numbers: MutableList<Int> = mutableListOf(1, 2, 3)
 val readOnlyView: List<Int> = numbers
@@ -43,4 +44,20 @@ val strings = hashSetOf("a", "b", "c", "c")
 assert(strings.size == 3)
 }
 
+// package org.electroteach
+fun gearsOut (): String {
+    var formatted =""
+    val frontGears = listOf(42.0, 32.0, 22.0)   // deliberately not sorted
+        val rearGears = listOf(26.0, 23.0, 21.0, 19.0, 17.0, 15.0, 13.0, 12.0)  // number of teeth on gear is an integer
+    for (f in frontGears){
+    for (r in rearGears){
+         formatted = formatted + String.format("*%.2f   %.2f   %.2f   \n", f/r, f, r ) ;
 
+		}
+//	println("next f")
+    } 
+//    var formatted2 = ""
+//   formatted2 = formatted
+    return formatted
+
+}
