@@ -26,15 +26,15 @@ fun main(args: Array<String>) {
     .sortedBy{it}
 //    .max()
     .forEach { println(it/2.0) }
-    println("==")
+    println("==*")
     for (f in frontGears){
     for (r in rearGears){
         val formatted = String.format("%.2f   %.2f %.2f", f/r, f, r ) ;
         println(formatted) 
-//        println(f/r )
-    }
- 
+		}
+	println("next f")
     }   
+        println("==*")
     val numbers: MutableList<Int> = mutableListOf(1, 2, 3)
 val readOnlyView: List<Int> = numbers
 println(numbers)        // prints "[4, 2, 3]"
