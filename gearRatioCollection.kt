@@ -27,14 +27,15 @@ fun main(args: Array<String>) {
 //    .max()
     .forEach { println(it/2.0) }
     println("==*")
-    var formatted =" "
+    var formatted ="%"
     for (f in frontGears){
     for (r in rearGears){
-         formatted = formatted + String.format("*%.2f   %.2f   %.2f   ", f/r, f, r ) ;
-        println(formatted) 
+         formatted = formatted + String.format("*%.2f   %.2f   %.2f   \n", f/r, f, r ) ;
+
 		}
 	println("next f")
-    }   
+    } 
+    println(formatted)   
         println("==*")
     val numbers: MutableList<Int> = mutableListOf(1, 2, 3)
 val readOnlyView: List<Int> = numbers
