@@ -4,14 +4,20 @@
  */
 
 fun main(args: Array<String>) {
-        val frontGears = listOf(32.0,22.0,42.0)
-        val rearGears = listOf(14,16,20,30,48)
+data class gRatio (
+val name : String,
+val frontG : Double,
+val rearG : Double
+)
+
         val items = setOf("apple", "banana", "kiwi")
     when {
         "orange" in items -> println("juicy")
         "apple" in items -> println("apple is fine too")
     }
-
+        val frontGears = listOf(32.0,22.0,42.0)
+        val rearGears = listOf(14,16,20,30,48)
+        
     println("Hello, world! 1")
     frontGears
     .sortedBy{it}
@@ -36,6 +42,9 @@ fun main(args: Array<String>) {
     .sortedBy{it}  // so we want a sorted list and then we want it to be printed with a specific format
     .forEach{ println("%6.3f  ".format(it))}
         println("Hello, world! 4")
+        
+//        val largestElement = frontGears.max()
+//        println("**    ",  frontGears.max())
 }
   //  numbers.add(2.3)
    // numbers.add(2.0)    
