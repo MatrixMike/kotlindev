@@ -13,3 +13,6 @@ fun gearsOut () {
     println(formatted)
 
 }
+fun main(args: Array<String>) {
+gearsOut()
+}
