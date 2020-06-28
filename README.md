@@ -4,7 +4,7 @@ experiments with kotlin - java compatible language
 compile with : kotlin hello.kt
 execute compiled (class) HelloKt 1 2 3 
 =======
-experiments with kotlin - java compatble language
+experiments with kotlin - java compatible language
 
 kotlinc hello.kt -include-runtime -d hello.jar
 

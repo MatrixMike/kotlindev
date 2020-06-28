@@ -3,10 +3,7 @@
 // https://kotlinexpertise.com/kotlin-reified-types/
 import java.util.*
 
-
-
 val floatValue: Float = Resources.dpToPx(64)
-
 val floatValue: Int   = Resources.dpToPx(64)
 
 inline fun <reified T>
@@ -17,9 +14,9 @@ inline fun <reified T>
  displayMetrics)
  
  return when (T::class) {
- Float::class -> result as T
- Int::class -> result.toInt() as T 
- else -> throw illegalAccessException("")
+	Float::class -> result as T
+	Int::class -> result.toInt() as T 
+	else -> throw illegalAccessException("")
  }
  }
  
