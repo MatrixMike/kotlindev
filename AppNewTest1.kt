@@ -4,8 +4,16 @@
 //latitudeText.text = resources
 //	.getString(R.string.latitude_label, location?.latitude)    
 
+fun String.removeFirstLastChar():
+String = this.substring(1, this.length -1)
 
 fun main(args: Array<String>) { 
+    fun printDouble(d: Double) { print(d) }
+
+val string1 = "Today is cloudy"
+val string2 = string1.removeFirstLastChar()	
+//val location = taskLocation.result
+	println("$string2")
 val a: Int = 100
 val boxedA: Int? = a
 val anotherBoxedA: Int? = a
@@ -16,5 +24,14 @@ val anotherBoxedB: Int? = b
 
 val i: Int = b.toInt() // OK: explicitly widened
 print(i)  
+
+//val string1: Any = "Today is Monday"
+when(string1)
+{
+	is String  -> string1.length
+//	Is Int -> string1.inc()
+}
+
+
     }
     
