@@ -1,4 +1,6 @@
-
+import java.time.OffsetDateTime;
+import java.time.OffsetTime;
+import java.time.format.FormatStyle;
 import java.time.LocalTime; 
 import java.time.LocalDate;  // Import the LocalDateTime class
 import java.time.LocalDateTime;  // Import the LocalDateTime class
@@ -8,11 +10,11 @@ import java.time.ZonedDateTime;
 
 fun main(args: Array<String>) {
 // println(gearsOut())
-val dateTime = LocalDateTime.parse("2016-12-08T10:20:30")
-val date = LocalDate.parse("2016-12-08")
-val time = LocalTime.parse("10:20:30")
+	val dateTime = LocalDateTime.parse("2016-12-08T10:20:30")
+	val date = LocalDate.parse("2016-12-08")
+	val time = LocalTime.parse("10:20:30")
 
-println(dateTime.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM)))
-println(date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM)))
-println(time.format(DateTimeFormatter.ofLocalizedTime(FormatStyle.MEDIUM)))
+	println(dateTime.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM)))
+	println(date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM)))
+	println(time.format(DateTimeFormatter.ofLocalizedTime(FormatStyle.MEDIUM)))
 }
