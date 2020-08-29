@@ -2,10 +2,13 @@ package social.ict
 
 class Greeter {
 
-    fun greet() {
-        println("Hello object world!")
-    }
+	fun greet(name: String) {
+        println("Hi $name")
+	}
 
 }
-val greeter = Greeter()
 
+fun main(args: Array<String>) {
+	val greeter = Greeter()
+	greeter.greet("Carl")
+}	
