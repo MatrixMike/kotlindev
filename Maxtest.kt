@@ -1,11 +1,18 @@
 	
 package com.javasampleapproach.kotlin.maxvalue
- 
+//import com.google.android.gms.location.Location
 data class Product(
   val name: String,
   val price: Double // usd
 )
- 
+var   ans1: Double  = 1.0  // : FloatArray[2]
+//var   ans2: Double[1.0f,1.0f]  //  = {1.0f,1.0f}  // : FloatArray[2]
+//var x:  = arrayOf(1.0, 2.0, 3.0)  // was Double
+var doubleArray = doubleArrayOf(1.1, 2.2, 3.3, 4.4, 5.5, 6.6)
+//var floatArray : floatArrayOf(1.1f,1.2f)
+var   ans3: Double = 1.0
+//var distance2: Double = Location.distanceBetween(-37.892, 144.775, -37.874, 144.785, floatArray)
+
 fun main(args : Array<String>) {
   val simpleList = listOf(1.99, 55.4, 20.0, 99.99, 23.0, 34.2, 88.0, 72.1, 61.2, 43.9)
   

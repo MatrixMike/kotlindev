@@ -16,7 +16,7 @@ val rearG : Double
         "apple" in items -> println("apple is fine too")
     }
         val frontGears = listOf(32.0,22.0,42.0)
-        val rearGears = listOf(14,16,20,30,48)
+        val rearGears = listOf(12,14,16,20,30,48)
         
     println("Hello, world! 1")
     frontGears

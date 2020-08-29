@@ -1,0 +1,14 @@
+Thu 30 Jul 2020 15:23:03 
+
+
+Check out sunflower App - 
+grow zone function 
+
+====
+/home/mikeh/AndroidStudioProjects/BasicLocationKotlin/app/src/main/java/com/google/android/gms/location/sample/basiclocationsample/MainActivity.kt
+Error:(96, 53) Call requires API level 26 (current min is 15): `java.time.LocalDateTime#now`
+Warning:(101, 46) Do not concatenate text displayed with `setText`. Use resource string with placeholders.
+Warning:(101, 47) String literal in `setText` can not be translated. Use Android resources instead.
+Warning:(175, 37) Redundant qualifier name
+
+
