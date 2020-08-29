@@ -7,3 +7,5 @@ class Greeter {
     }
 
 }
+val greeter = Greeter()
+
