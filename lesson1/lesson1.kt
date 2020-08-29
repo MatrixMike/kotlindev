@@ -1,11 +1,11 @@
 package social.ict
 
 class Greeter {
+    var text: String = ""
 
-	fun greet(name: String) {
-        println("Hi $name")
-	}
-
+    fun greet(name: String) {
+        println("$text $name")
+    }
 }
 
 fun main(args: Array<String>) {
