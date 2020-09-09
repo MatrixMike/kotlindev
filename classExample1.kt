@@ -24,3 +24,6 @@ fun printUser(user: User){
 }
  
 data class User(val name: String, val age: Int); 
+
+
+// see also https://www.tutorialkart.com/kotlin/kotlin-for-loop/
