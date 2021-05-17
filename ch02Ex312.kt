@@ -25,9 +25,12 @@ fun main(args: Array<String>) {
     println(Color.BLACK.rgb())
     val pi = 3.14159265358979323  // maybe try math.pi 
     val pi2 = Math.PI
-    val formatted =  String.format("%.4f", pi) ;
-    val formatted2 = String.format("%.4f", pi2) ;
+    // https://kodejava.org/how-do-i-align-string-print-out-in-left-right-center-alignment/
+    val formatted =  String.format("% 8.4f", pi) ;
+    val formattedm =  String.format("% 8.4f", -pi) ;
+    val formatted2 = String.format("% 8.4f", pi2) ;
     println(formatted)
+    println(formattedm)
     println(formatted2)
     println(String.format("0x%08X", Color.MJHTEST.rgb()))
     println(String.format("1 %tB",7L))
