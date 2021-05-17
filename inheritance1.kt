@@ -1,5 +1,5 @@
  // https://www.tutorialkart.com/kotlin/kotlin-inheritance/
-fun main(args: Array<String>) {
+fun main() {   // was    fun main(args: Array<String>) ; removed to avoid warning message
     var student_1 = Student("Arjun")
     var teacher_1 = Teacher("Amit")
  
@@ -11,7 +11,7 @@ fun main(args: Array<String>) {
 }
  
 /**
-* Person is a Parent Class
+* Person is a Parent Class  // pity about using people twice
 */
 open class Person(var role: String = "Person", var name: String = "X") {
     fun eat(){
@@ -39,7 +39,7 @@ class Student(name: String): Person("Student", name) {
 }
  
 /**
-* Student class inherits Person class
+* Teacher class inherits Person class
 */
 class Teacher(name: String): Person("Teacher", name) {
     fun profession(){

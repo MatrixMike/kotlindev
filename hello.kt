@@ -36,7 +36,7 @@ fun main(args: Array<String>) {
     .filter { it.startsWith("b") }
  //   .filter { it.endsWith("o") }
     .sortedBy { it }
-    .map { it.toUpperCase() }
+    .map { it.uppercase() }
     .forEach { println(it) }
     println(fruits)
     
@@ -50,11 +50,13 @@ fun main(args: Array<String>) {
     calendarDemo()
     println("Hello, World! 3")
     
-    val array = arrayOf(1, 2, 3, 4)
-//	array[x] = array[x] * 2 // no actual calls to get() and set() generated
-	for (x in array) { // no iterator created
-    print(x)
+    val arrayInt = arrayOf(1, 2, 3, 4)
 
-	}
+//	for (x in arrayInt) { // no iterator created
+//			arrayInt[x] = arrayInt[x] * 2 // no actual calls to get() and set() generated  // TODO 
+//    print(arrayInt)
+//	}
+	print (arrayInt[2])
+	print (arrayInt[1])
     print("\n")
 }
