@@ -22,7 +22,7 @@ fun main(args: Array<String>) {
     fruits
     .filter { it.startsWith("a") }
     .sortedBy { it }
-    .map { it.toUpperCase() }
+    .map { it.uppercase() }
     .forEach { println(it) }
     
     val items = setOf("apple", "banana", "kiwi")
